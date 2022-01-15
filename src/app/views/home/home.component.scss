@@ -1,0 +1,289 @@
+.banner {
+    background-image: url('../../../assets/img/banner.jpg'), linear-gradient(to right, #4f298e 60%, #557dbb);
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    button {
+        background-color: #0e0e10;
+        color: #f3f3f3;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #525252;
+        }
+
+    }
+
+    .liveon {
+        position: relative;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px #00000080;
+
+        &::before {
+            content: 'ao vivo';
+            text-transform: uppercase;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            background-color: #f00;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            z-index: 1000;
+        }
+
+        &:hover {
+
+            .information-live {
+                opacity: 1;
+            }
+
+        }
+
+        .gif {
+            height: 281px;
+
+            img {
+                border-radius: 5px;
+
+            }
+
+        }
+
+        .information-live {
+            position: absolute;
+            top: 0;
+            background-color: #00000030;
+            width: 100%;
+            height: 281px;
+            padding: 20px 15px;
+            opacity: 0;
+            transition: 200ms;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .data {
+                display: flex;
+
+                img {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                }
+
+                .stream {
+                    padding: 0 10px;
+
+                    p:nth-child(1) {
+                        text-decoration: underline;
+                        font-weight: 900;
+                        font-size: 16px;
+                        transition: 200ms;
+
+                        &:hover {
+                            color: #ffffff99;
+
+                        }
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 14px;
+                    }
+                    
+                    p:nth-child(3) {
+                        font-size: 13px;
+                        color: #ffffffbe;
+
+                        a {
+                            text-decoration: underline;
+                            color: #ffffffbe;
+
+                            &:hover {
+                                color: #ffffff95;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .tools {
+                display: flex;
+                gap: 20px;
+
+            }
+
+        }
+
+    }
+
+}
+
+.container {
+    padding: 20px 30px;
+    
+    .title {
+        margin: 0 0 10px 0;
+    
+        h4 {
+    
+            a {
+                color: #bf94ff;
+    
+                &:hover {
+                    color: #a970ff;
+                    text-decoration: underline;
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .line {
+        background-color: rgba(255, 255, 255, 0.178);
+        height: 1px;
+        margin: 0 0 40px 0;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: space-between;
+
+        .category {
+
+            a {
+                color: #ffffff;
+                padding: 0 20px;
+                background-color: #772ce8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                max-height: 50px;
+                font-weight: 900;
+                letter-spacing: 1px;
+                font-size: 18px;
+                transition: 200ms;
+
+                &:hover {
+                    background-color: #9256ed;
+                }
+                
+                img {
+                    transform: scale(1.1);
+                    margin: 0 0 0 20px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .cards {
+        width: calc(100vw - 310px);
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+
+        .card {
+            cursor: pointer;
+
+            .image {
+                position: relative;
+                margin: 0 0 5px 0;
+
+                &:hover {
+
+                    img {
+                        transform: translate(6px, -6px);
+                        transition: 200ms;
+                    }
+
+                }
+                
+                img {
+                    position: absolute;
+                    width: 160px;
+                    transition: 200ms;
+                }
+                
+                .background {
+                    width: 160px;
+                    height: 212px;
+                    top: 0;
+                    background-color: #9147ff;
+                }
+            }
+
+            .information-card {
+
+                p {
+                    font-size: 14px;
+                    transition: 200ms;
+
+                    &:hover {
+                        color: #a970ff;
+
+                    }
+
+                }
+
+                span {
+                    font-size: 13px;
+                    color: #ffffff96;
+                    transition: 200ms;
+
+                    &:hover {
+                        color: #a970ff;
+
+                    }
+
+                }
+
+                .type-game {
+                    
+                    a {
+                        font-size: 11px;
+                        background-color: #323234;
+                        border: 2px 3px;
+                        padding: 3px 6px;
+                        border-radius: 10px;
+                        margin: 0 5px 0 0;
+                        color: #efeff1;
+                        cursor: pointer;
+                        transition: 200ms;
+
+                        &:hover {
+                            background-color: #3e3e40;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

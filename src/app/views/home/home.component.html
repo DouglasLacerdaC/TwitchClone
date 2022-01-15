@@ -1,0 +1,85 @@
+<div class="banner">
+
+    <button><i class="fas fa-chevron-left"></i></button>
+
+    <div class="liveon">
+        <div class="gif">
+            <img src="../../../assets/img/live/demonslayer.gif" alt="">
+        </div>
+        <div class="information-live">
+            <div class="data">
+                <img src="../../../assets/img/live/channel.png" alt="">
+                <div class="stream">
+                    <p>Maraton</p>
+                    <p>Vem pra live</p>
+                    <p>Assistindo <a href="">Demon Slayer</a> para 120 espectadores</p>
+                </div>
+            </div>
+            <div class="tools">
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-volume-mute"></i>
+            </div>
+        </div>
+    </div>
+
+    <button><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<div class="container">
+    
+    <div class="title">
+        <h4><a href="">Categorias</a> que achamos que vai gostar</h4>
+    </div>
+
+    <div class="cards">
+        <div *ngFor="let recommended of recommendedList" class="card" (click)="games(recommended.name)">
+            <div class="image">
+                <img src="{{ recommended.image }}" alt="">
+                <div class="background"></div>
+            </div>
+            <div class="information-card">
+                <p>{{ recommended.name }}</p>
+                <span>{{ recommended.views }} espectadores</span>
+                <div class="type-game">
+                    <a *ngFor="let type of recommended.types" href="">{{ type }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="categories">
+        <div class="category">
+            <a href="">
+                <span>Jogos</span>
+                <img src="../../../assets/img/categories/gaming.svg" alt="">
+            </a>
+        </div>
+        <div class="category">
+            <a href="">
+                <span>Vida Real</span>
+                <img src="../../../assets/img/categories/mic.svg" alt="">
+            </a>
+        </div>
+        <div class="category">
+            <a href="">
+                <span>Música</span>
+                <img src="../../../assets/img/categories/music.svg" alt="">
+            </a>
+        </div>
+        <div class="category">
+            <a href="">
+                <span>Esports</span>
+                <img src="../../../assets/img/categories/esports.svg" alt="">
+            </a>
+        </div>
+        <div class="category">
+            <a href="">
+                <span>Creative</span>
+                <img src="../../../assets/img/categories/creative.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="live-on">
+        <video src="../../../assets/img/live.mp4" muted autoplay controls></video>
+
+        <div class="information-live">
+            <div class="image">
+                <img src="../../../assets/img/channels/alanzoka.png" alt="">
+            </div>
+            <div class="data">
+                <div class="user-name">
+                    <p>
+                        alanzoka 
+                        <span class="verification">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </p>
+                    <div class="buttons">
+                        <button><i class="far fa-heart"></i> Seguir</button>
+                        <button><i class="far fa-star"></i> Inscrever-se <i class="fas fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="title">
+                    <p>ROCKET LEAGUE COM A GALERA -- COLA</p>
+                    <div class="inspec">
+                        <span><i class="far fa-user"></i> 21.332</span>
+                        <span>54:56</span>
+                    </div>
+                </div>
+                <a href="" class="game">Rocket League</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chat">
+
+        <div class="title">
+            <i class="fas fa-sign-out-alt"></i>
+            <p>chat da transmissão</p>
+            <i class="fas fa-user-friends"></i>
+        </div>
+
+        <div class="donations">
+
+            <div class="donate-first">
+                <img src="../../../assets/img/donate1.png" width="30" alt="">
+                <div class="info-donate">
+                    <span>its_louza</span>
+                    <span>
+                        <img src="../../../assets/img/sub.png" width="12" alt="">
+                        50
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <div class="donate">
+                    <img src="../../../assets/img/donate2.png" alt="">
+                    <div class="info-donate">
+                        <span>its_louza</span>
+                        <span>
+                            <img src="../../../assets/img/sub.png" width="12" alt="">
+                            50
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="donate">
+                    <img src="../../../assets/img/donate3.png" alt="">
+                    <div class="info-donate">
+                        <span>its_louza</span>
+                        <span>
+                            <img src="../../../assets/img/sub.png" width="12" alt="">
+                            40
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="conversation">
+            <div *ngFor="let message of chatMessages" class="message">
+                <span class="name-user" [ngStyle]="{ 'color': message.color }" >
+                    <img src="{{ message.badge }}" alt="">
+                    <img src="{{ message.second }}" alt="">
+                    {{ message.user }}
+                </span>:
+                <span class="content">{{ message.content }}</span>
+            </div>
+        </div>
+
+        <div class="input">
+            <div class="input-message">
+                <input type="text" placeholder="Envie uma mensagem">
+                <i class="far fa-smile-beam"></i>
+            </div>
+        </div>
+
+    </div>
+</div>

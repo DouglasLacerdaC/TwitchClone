@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="information-game">
+        <div class="image">
+            <img src="{{ informationGame.image }}" alt="">
+        </div>
+        <div class="game">
+            <h4>{{ informationGame.name }}</h4>
+            <div class="views">
+                <ul>
+                    <li><strong>{{ informationGame.followings }}</strong> seguidores</li>
+                    <li><strong>{{ informationGame.views }}</strong> seguidores</li>
+                    <li>
+                        <div class="type-game">
+                            <a *ngFor="let type of informationGame.types" href="">{{ type }}</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button><i class="far fa-heart"></i> Seguir</button>
+        </div>
+    </div>
+
+    <div class="navigation-tab">
+        <a href="">Canais ao vivo</a>
+        <a href="">Vídeos</a>
+        <a href="">Clipes</a>
+    </div>
+
+    <div class="lives">
+        <div *ngFor="let live of listLives" class="live">
+            <div class="container-image">
+                <img src="{{ live.image }}" alt="">
+                <div class="shadow" [ngStyle]="{'background-color': live.bg }"></div>
+            </div>
+            <div class="information-live">
+                <img src="{{ live.imageUser }}" alt="">
+                <div class="content">
+                    <p>{{ live.title }}</p>
+                    <p>{{ live.nameUser }}</p>
+                    <div class="type-live">
+                        <a href="">{{ live.type }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

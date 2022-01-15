@@ -1,0 +1,210 @@
+.container {
+    padding: 30px;
+
+    .information-game {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .image {
+
+            img {
+                width: 144px;
+            }
+
+        }
+
+        .game {
+
+            h4 {
+                font-size: 38px;
+                letter-spacing: 1px;
+            }
+
+            .views {
+                
+                ul {
+                    display: flex;
+                    gap: 35px;
+
+                    li {
+                        list-style: outside;
+                        color: #d8d8d8;
+
+                        strong {
+                            color: #ebebeb;
+                        }
+
+                        .type-game {
+                    
+                            a {
+                                font-size: 12px;
+                                background-color: #323234;
+                                border: 2px 3px;
+                                padding: 3px 10px;
+                                border-radius: 10px;
+                                margin: 0 5px 0 0;
+                                color: #dfdfe0;
+                                cursor: pointer;
+                                transition: 200ms;
+                                font-weight: 900;
+        
+                                &:hover {
+                                    background-color: #3e3e40;
+        
+                                }
+        
+                            }
+        
+                        }
+
+                    }
+
+                    li:nth-child(1) {
+                        list-style: none;
+                    }
+
+                }
+
+            }
+
+            button {
+                border: none;
+                padding: 7px 10px;
+                border-radius: 5px;
+                color: #ffffff;
+                background-color: #9147ff;
+                margin: 20px 0 0;
+                transition: 200ms;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #772ce8;
+                }
+
+                svg {
+                    margin: 0 6px 0 0;
+                }
+
+            }
+
+        }
+
+    }
+
+    .navigation-tab {
+        font-size: 17px;
+        font-weight: 900;
+        display: flex;
+        gap: 15px;
+
+        a {
+            padding: 10px 0 5px 0;
+            transition: 200ms;
+            color: #ffffff;
+
+            &:hover {
+                color: #a970ff;
+            }
+
+        }
+
+        a:nth-child(1) {
+            color: #bf94ff;
+            border-bottom: 2px solid #bf94ff;
+        }
+
+    }
+
+    .lives {
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .live {
+            cursor: pointer;
+
+            .container-image {
+                position: relative;
+
+                &:hover {
+
+                    img {
+                        transform: translate(6px, -6px);
+                    }
+                    
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    width: 346px;
+                    transition: 200ms;
+                    height: 196px;
+                }
+
+                .shadow {
+                    width: 346px;
+                    height: 196px;
+                }
+
+            }
+
+            .information-live {
+                display: flex;
+                padding: 10px 0;
+
+                img {
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                }
+
+                .content {
+                    padding: 0 10px;
+
+                    p:nth-child(1) {
+                        font-size: 15px;
+                        font-weight: bolder;
+                        color: #dbdbdb;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 12px;
+                        color: #a3a2a2;
+                        padding: 3px 0;
+                    }
+
+                    .type-live {
+                    
+                        a {
+                            font-size: 11px;
+                            background-color: #323234;
+                            border: 2px 3px;
+                            padding: 3px 6px;
+                            border-radius: 10px;
+                            margin: 0 5px 0 0 !important;
+                            color: #efeff1;
+                            cursor: pointer;
+                            transition: 200ms;
+    
+                            &:hover {
+                                background-color: #3e3e40;
+    
+                            }
+    
+                        }
+    
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
